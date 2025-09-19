@@ -12,7 +12,7 @@ export async function GET() {
       return new Response(JSON.stringify({ error: "USD not found" }), { status: 404 });
     }
 
-    const usdToToman = Number(usdItem.price); // قیمت دلار به تومان
+    const usdToToman = Number(usdItem.price); 
 
     return new Response(JSON.stringify({ usdToToman }), { status: 200 });
   } catch (err) {
